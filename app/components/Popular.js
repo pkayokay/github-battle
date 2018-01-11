@@ -22,7 +22,7 @@ class Popular extends React.Component {
 
     return (
       <ul className='languages'>
-        {languages.map(function (lang) {
+        {languages.map((lang) => {
           return (
             <li
               style={lang === this.state.selectedLanguage ? { color: '#d0021b'} : null}
@@ -31,7 +31,7 @@ class Popular extends React.Component {
               {lang}
             </li>
           )
-        }, this)}
+        })}
       </ul>
     )
   }
